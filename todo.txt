@@ -1,0 +1,73 @@
+-Todo list
+
+-DONE Install and setup (Django)
+    virtualenv environment_3_8_2
+    .\environment_3_8_2\Scripts\activate
+    pip install django
+    pip install django-rest-framework
+    pip install django-cors-headers
+    pip install djoser
+    pip install pillow
+    pip install stripe
+    django-admin startproject djackets_django
+    cd djackets_django
+    python manage.py makemigrations
+    python manage.py migrate
+    python manage.py createsuperuser
+-DONE Install and setup (Vue)
+    npm install -g @vue/cli
+    vue create djackets_vue  
+        manually 
+        (babel,router,vuex,css pre-processors) 
+        3.x 
+        history yes 
+        sass/scss dart 
+        dedicated config 
+        dont save this for next projects
+    cd djackets_vue
+    npm install axios
+    npm install bulma
+-DONE Include Font Awesome
+-DONE Set up the base template
+-DONE Create django app and models for products
+    python manage.py startapp product
+    python manage.py makemigrations
+    python manage.py migrate
+-DONE Create serializer and views for the products
+-DONE Create simple front page (latest products)
+-DONE View a product
+    -Create viewset in Django
+    -Create vue page for showing product
+    -Add link to detail page
+-DONE Sette opp Vuex/State
+-DONE Make it possible to add to cart
+    -Add functionality to vuex
+    -Initialize store in app.vue
+    -Add button to product page
+    -Show a toast message
+    npm install bulma-toast
+-DONE Implement a loading bar
+-DONE Set document title (All pages)
+-DONE Make it possible to view a category
+    -Convert the product to a component
+-DONE Add search functionality
+-DONE View cart
+    -A cart item should be a compoenent
+-DONE Change contents of cart
+    -Increment/Decrement content
+    -Remove from cart
+-DONE Make it possible to sign up
+-DONE Make it possible to log in
+-DONE Create a simple my account page
+-DONE Proceed to checkout (Authentication)
+-DONE Create a simple success page
+-Show my orders on the my account page
+    -An order should be a component
+    python manage.py startapp order
+-Deploy Django
+    -Create a server and access it
+    -Install software
+    -Create postgres database
+    -Create users and virtual environment
+    -Install packages and get project files
+    -Create seperate settingsfile for production
