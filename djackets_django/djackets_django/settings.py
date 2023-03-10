@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-9ea=isj&kh84q+fxw@s*7ns4n_f)1%wtfp1om@-nnxh$cj76m(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    #"apidjackets.minaz.dev",
+    #"djackets.minaz.dev"
+]
 
 STRIPE_SECRET_KEY = '###'
 
@@ -50,6 +53,7 @@ INSTALLED_APPS = [
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:8080',
+    #'https://djackets.minaz.dev'
 ]
 
 MIDDLEWARE = [
@@ -93,6 +97,17 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'djackets',
+#         'USER': 'djacketsuser',
+#         'PASSWORD': '***',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
 
 
 # Password validation
